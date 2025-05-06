@@ -15,3 +15,4 @@ for index, row in df.iterrows():
     print(odd_bigger(index))
 
 """Making a change to trace it with GIT"""
+"""Third change on remote file so when I merge on local generates the need to settle a conflict"""
