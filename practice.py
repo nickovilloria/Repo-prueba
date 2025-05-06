@@ -16,3 +16,4 @@ for index, row in df.iterrows():
 
 """Making a change to trace it with GIT"""
 """Second change to trace with GIT now on a new branch"""
+"""Third change on remote file so when I merge on local generates the need to settle a conflict"""
