@@ -1,19 +1,23 @@
 import pandas as pd
-data = { 'even': range(20,0,-2),
-         'odd':  range(1,21,2)
-       }
-df = pd.DataFrame(data)
+import numpy as np  
+
+# Sample fruit price DataFrame
+data = {'Fruit': ['Apple', 'Banana', 'Orange'],  
+        'Price': [2.5, 1.2, 3.3]}
+df= pd.DataFrame(data)
 print(df)
-print(df.apply(max))
 
-def odd_bigger(row):
-    if row['odd'] > row['even']:
-        return True
-    return False
 
-for index, row in df.iterrows():
-    print(odd_bigger(index))
+# Calculate average price  
+avg_price = df['Price'].mean()  
+print(avg_price)
 
-"""Making a change to trace it with GIT"""
-"""Second change to trace with GIT now on a new branch"""
-"""Third change on remote file so when I merge on local generates the need to settle a conflict"""
+# Filter prices > average
+filter = df['Fruit']<'D'
+print(df.loc[filter])
+
+# isin() filter on fruits   
+fruit_filter = df['Fruit'].isin(['Apple','Orange']) 
+df.loc[fruit_filter]
+print(df.loc[fruit_filter])
+
