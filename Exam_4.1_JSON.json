@@ -1,0 +1,14 @@
+[
+    {
+        "ID": 1,
+        "Nombre": "Cliente A",
+        "Fecha": "2024-01-01",
+        "Monto": 100.0
+    },
+    {
+        "ID": 2,
+        "Nombre": "Cliente B",
+        "Fecha": "2024-02-01",
+        "Monto": 150.0
+    }
+]
